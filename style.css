@@ -1,0 +1,18 @@
+.black-border{
+  border:5px solid black;
+}
+#grey-background{
+  background-color:grey;
+}
+
+h1 {
+  color: green;
+}
+ h3{
+  background-color:#f4f4f4;
+  color:#555;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font: size 22x;
+  font-weight: normal;
+  line-height: 1.6em;
+}

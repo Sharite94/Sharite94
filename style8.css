@@ -1,0 +1,46 @@
+.box-model-properties {
+  border: 5px solid blue;
+  margin: 20px;
+  padding: 10px;
+}
+
+.center-title {
+  color: red;
+  margin: 0 auto;
+  width: 400px;
+  text-align: center;
+}
+.navigation-links {
+  padding: 0;
+}
+
+.navigation-links li {
+  display: inline;
+  margin: 10px;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: lightcyan;
+}
+
+input select textarea {
+  line-height: 25px;
+  font-size: 16px;
+  font-family: monospace;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-color: purple;
+    color: lightgray;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.center-title {
+  width: 600px;
+}

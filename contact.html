@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css8/style8.css" />
+    <link rel="stylesheet" type="text/css" href="css9/style9.css" />
     <title>Sharketing</title>
   </head>
+  <body>
+    <header>
+      <h1 class="title2">Aanmelden voor de nieuwsbrief</h1>
+      <p class="contacttitle" >Wekelijks op de hoogte blijven van de nieuwste recepten? </p></header>
   <form name="contact" method="POST" data-netlify="true">
     <p>
       <label>Naam: <input type="text" name="name" /></label>
@@ -15,50 +19,22 @@
       <label>E-mail: <input type="email" name="email" /></label>
     </p>
     <p>
-      <label>Telefoonnummer: <input type="tel" name="tel" /></label>
-    </p>
-    <p>
-      <label>Leeftijd: <input type="number" name="age" /></label>
-    </p>
-    <p>
-      <label>Geboortedatum: <input type="date" name="date of birth" /></label>
-    </p>
+      <label>Telefoonnummer: <input type="tel" name="tel" /></label></p>
     <p>
       <label
-        >Gender: <input type="radio" name="gender" value="male" />
-        <label for="male">man</label>
-        <input type="radio" name="gender" value="female" />
-        <label for="female">vrouw</label>
+        >Hou mij op de hoogte van de volgende onderwerpen:<br />
+        <input type="checkbox" name="cuisine1" value="soulfood" />
+        <label for="cuisine1">Soulfood</label><br />
+        <input type="checkbox" name="cuisine2" value="Lekkernijen" />
+        <label for="cuisine2">Lekkernijen</label><br />
+        <input type="checkbox" name="cuisine3" value="traditioneel" />
+        <label for="cuisine3">Traditioneel</label><br />
       </label>
     </p>
     <p>
-      <label
-        >favoriete cuisine: <br />
-        <input type="checkbox" name="cuisine1" value="frans" />
-        <label for="cuisine1">Frans</label><br />
-        <input type="checkbox" name="cuisine2" value="italiaans" />
-        <label for="cuisine2">Italiaans</label><br />
-        <input type="checkbox" name="cuisine3" value="arabisch" />
-        <label for="cuisine3">Arabisch</label><br />
-      </label>
-    </p>
-    <p>
-      <label for="favcolor">favoriete kleur van short:</label>
-      <input type="color" name="favcolor" />
-    </p>
-    <p>
-      <label>Biografie <textarea name="message"></textarea></label>
-    </p>
-    <p>
-      <label for="myfile">Upload je laatste recept:</label><br />
-      <input type="file" name="myfile" />
-    </p>
-    <label for="page">Url naar je receptenwebsite:</label>
-    <input type="url" name="page" />
-    <p><input type="reset" /></p>
-    <p>
-      <button type="submit">Send</button>
+      <button type="submit">Meld mij aan voor de nieuwsbrief</button>
     </p>
   </form>
+</body>
   <a href="index.html" target="_blank">terug naar home</a>
 </html>

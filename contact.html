@@ -9,17 +9,56 @@
   </head>
   <form name="contact" method="POST" data-netlify="true">
     <p>
-      <label>Your Name: <input type="text" name="name" /></label>
+      <label>Naam: <input type="text" name="name" /></label>
     </p>
     <p>
-      <label>Your Email: <input type="email" name="email" /></label>
+      <label>E-mail: <input type="email" name="email" /></label>
     </p>
     <p>
-      <label>Message: <textarea name="message"></textarea></label>
+      <label>Telefoonnummer: <input type="tel" name="tel" /></label>
     </p>
+    <p>
+      <label>Leeftijd: <input type="number" name="age" /></label>
+    </p>
+    <p>
+      <label>Geboortedatum: <input type="date" name="date of birth" /></label>
+    </p>
+    <p>
+      <label
+        >Gender: <input type="radio" name="gender" value="male" />
+        <label for="male">man</label>
+        <input type="radio" name="gender" value="female" />
+        <label for="female">vrouw</label>
+      </label>
+    </p>
+    <p>
+      <label
+        >favoriete cuisine: <br />
+        <input type="checkbox" name="cuisine1" value="frans" />
+        <label for="cuisine1">Frans</label><br />
+        <input type="checkbox" name="cuisine2" value="italiaans" />
+        <label for="cuisine2">Italiaans</label><br />
+        <input type="checkbox" name="cuisine3" value="arabisch" />
+        <label for="cuisine3">Arabisch</label><br />
+      </label>
+    </p>
+    <p>
+      <label for="favcolor">favoriete kleur van short:</label>
+      <input type="color" name="favcolor" />
+    </p>
+    <p>
+      <label>Biografie <textarea name="message"></textarea></label>
+    </p>
+    <p>
+      <label for="myfile">Upload je laatste recept:</label><br />
+      <input type="file" name="myfile" />
+    </p>
+    <label for="page">Url naar je receptenwebsite:</label>
+    <input type="url" name="page" />
+    <p><input type="reset" /></p>
     <p>
       <button type="submit">Send</button>
     </p>
   </form>
-  <a href="cssbox2.html" target="_blank">terug naar home</a>
+  <a href="index.html" target="_blank">terug naar home</a>
 </html>

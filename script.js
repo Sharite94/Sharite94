@@ -1,43 +1,36 @@
-const age = 18;
-const isFemale = true;
-const driverStatus = "bob";
-const firstName = "Sarah";
-const totalAmount = 100;
+let person = {
+  name: "Sharite",
+  age: 27,
+};
 
-if (age >= 18) {
-    document.write("je mag naar binnen");
-  } else {
-      document.write("je wordt vriendelijk verzocht om buiten te blijven")
-}
+let evaluations = [7, 10, 9];
 
-if (age >= 18 && age <=25) {
-    console.log("je krijgt 50% korting!")
-} else {
-    console.log("geen korting")
-}
+let selectedColors = ["green", "blue", "red"];
 
-if (isFemale) {
-    document.write(" + 10% korting");
-} else {
-    document.write(" + 5% korting");
-}
+selectedColors[3] = "yellow";
 
-if (driverStatus == "bob") {
-    document.write(" + je mag rijden");
-} else {
-    document.write(" +je mag niet rijden");
-}
+selectedColors[4] = "5";
 
-if (firstName = "Sarah || Bram") {
-    console.log("gratis biertje");
-} else {
-    console.log("helaas geen gratis biertje");
-}
+selectedColors[5] = { greeting: "hi ik ben een object" };
 
-if (totalAmount >= 100) {
-    console.log("gratis fles champagne");
-}  else if (totalAmount >= 50) {
-        console.log("gratis portie nachos");
-    } else if (totalAmount >= 25) {
-        console.log("gratis (vega)bitterballen");
-    }
+//Not Notation
+person.name = "Sharite";
+console.log(person.name);
+
+//Brackert Notation
+let selection = "age";
+person[selection] = "27";
+
+console.log(person.age);
+
+console.log(evaluations);
+
+console.log(selectedColors);
+
+console.log(selectedColors.length);
+
+console.log(selectedColors[0]);
+
+console.log(selectedColors[2]);
+
+console.log(selectedColors[5]);

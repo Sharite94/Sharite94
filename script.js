@@ -1,7 +1,23 @@
-console.log("Hallo Winc Academy studenten");
-// Dit is een hele grote som
-/* Hele grote som */
-let multiplication = 1230941 * 1823794;
-console.log("multiplication:", multiplication);
-let division = 637263 / 54;
-console.log("division:", division);
+const age = 18;
+const isFemale = true;
+const driverStatus = "bob";
+
+if (age >= 18) {
+    document.write("je mag naar binnen");
+  } else {
+      document.write("je wordt vriendelijk verzocht om buiten te blijven")
+}
+  
+if (isFemale) {
+    document.write(" + 10% korting");
+} else {
+    document.write(" + 5% korting");
+}
+
+if (driverStatus == "bob") {
+    document.write(" + je mag rijden")
+} else {
+    document.write(" +je mag niet rijden")
+}
+    
+

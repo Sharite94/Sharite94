@@ -1,12 +1,13 @@
 function myFunction() {
-    var person = prompt("Voor- en achternaam", "Naam");
+    var person = prompt("Welkom! Wat is je naam?", "Naam");
     if (person != null) {
       document.getElementById("demo").innerHTML =
-      "Hey " + person + "! Voer een nummer in van 0 tot 25 om te beginnen met raden..";
+        "Hey " + person + "! Voer een nummer in van 0 tot 25 om te beginnen met raden..";
+    
     }
 }
   
-let randomNumber = Math.floor(Math.random() * 100) + 1;
+let randomNumber = Math.floor(Math.random() * 25) + 1;
       const guesses = document.querySelector('.guesses');
       const lastResult = document.querySelector('.lastResult');
       const lowOrHi = document.querySelector('.lowOrHi');
@@ -24,22 +25,16 @@ let randomNumber = Math.floor(Math.random() * 100) + 1;
         guesses.textContent += userGuess + ' ';
 
         if (userGuess === randomNumber) {
-          lastResult.textContent = 'Congratulations! You got it right!';
-          lastResult.style.backgroundColor = 'green';
+          lastResult.textContent = 'Gefeliciteerd je hebt gewonnen". Het spel is nu af.';
+          lastResult.textContent = 'Dag' + person + 'Tot de volgende keer';
           lowOrHi.textContent = '';
           setGameOver();
-        } else if (guessCount === 10) {
+        } else if (guessCount === 5) {
           lastResult.textContent = '!!!GAME OVER!!!';
           lowOrHi.textContent = '';
           setGameOver();
         } else {
-          lastResult.textContent = 'Wrong!';
-          lastResult.style.backgroundColor = 'red';
-          if(userGuess < randomNumber) {
-            lowOrHi.textContent = 'Last guess was too low!' ;
-          } else if(userGuess > randomNumber) {
-            lowOrHi.textContent = 'Last guess was too high!';
-          }
+          lastResult.textContent = 'Dat is niet correct, Raad opnieuw';
         }
 
         guessCount++;
@@ -71,5 +66,5 @@ let randomNumber = Math.floor(Math.random() * 100) + 1;
         guessField.value = '';
         guessField.focus();
         lastResult.style.backgroundColor = 'white';
-        randomNumber = Math.floor(Math.random() * 100) + 1;
+        randomNumber = Math.floor(Math.random() * 25) + 1;
       }
